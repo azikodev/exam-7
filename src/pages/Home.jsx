@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="container mt-5 ">
       <h2>Crud App with JSON Server</h2>
-      <NavLink to="/add" className="btn btn-success my-3 bg-red-700">
+      <NavLink to="/add" className="btn btn-success my-3 bg-green-600">
         Create +
       </NavLink>
       <table className="table">
@@ -36,8 +36,8 @@ function App() {
               <td>{d.id}</td>
               <td>{d.name}</td>
               <td>{d.email}</td>
-              <td><NavLink to={'./update/${d.id}'}>Edit</NavLink></td>
-              <td><NavLink to='./delete' >Delete</NavLink></td>
+              <td><NavLink to={'./update/${d.id}'} className='bg-blue-500 p-1'>Edit</NavLink></td>
+              <td><NavLink to='./delete' className='bg-red-700 p-1'>Delete</NavLink></td>
             </tr>
           ))}
         </tbody>

@@ -30,7 +30,7 @@ function Add() {
                         <input type="email" name='email' className='form-control border-2'
                         onChange={e=>setInputData({...inputData, email:e.target.value})}/>
                     </div> <br />
-                    <button className='btn'>Submit</button>
+                    <button className='btn bg-green-700 p-2 border-r-2'>Submit</button>
                 </form>
             </div>
         </div>
