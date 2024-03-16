@@ -22,12 +22,12 @@ function Add() {
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" name='name' className='form-control'
+                        <input type="text" name='name' className='form-control border-2'
                         onChange={e=>setInputData({...inputData, name:e.target.value})}/>
                     </div>
                     <div>
                         <label htmlFor="name">Email:</label>
-                        <input type="email" name='email' className='form-control'
+                        <input type="email" name='email' className='form-control border-2'
                         onChange={e=>setInputData({...inputData, email:e.target.value})}/>
                     </div> <br />
                     <button className='btn'>Submit</button>
